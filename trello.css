@@ -117,6 +117,7 @@
 
 .card-blog-link {
     margin-top: 20px;
+    margin-left: 70px;
 }
 
 .background-color-line {
@@ -265,8 +266,8 @@
     margin-right: 80px;
 }
 .text{
-    margin-left: 30px;
-    margin-right: 277px;
+    margin-left: 73px;
+    margin-right: 202px;
    
 }
 .text-link {
@@ -287,6 +288,7 @@
 }
 .background-color2 {
     background-color: rgb(240 240 240);
+    width: 136%;
 }
 .btn {
     margin-left: 30px;
