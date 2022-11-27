@@ -1,3 +1,971 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trello</title>
+    <link rel="stylesheet" href="trello.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <img src="data:image/jpeg;base64,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"
+                alt="Bootstrap" width="30" height="24">
+            <a class="navbar-brand" href="#">Trello</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Features
+                        </a>
+
+
+
+                        <ul class="dropdown-menu dropdown-Features-details features-details">
+
+
+
+
+
+
+
+
+                            <div class="d-flex background-color1">
+                                <li class="features-border"><a class="dropdown-item1" href="#">Explore the features that
+                                        help your team succeed</a>
+                                    <hr class="dropdown-divider header">
+
+                                    <div class="row row-cols-3 row-cols-md-9 g-3    ">
+                                        <div class="col   card-details card-color">
+                                            <div class="h-80">
+
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Views</p>
+                                                    </div>
+                                                    <small class="card-text">View your team’s projects from every
+                                                        angle.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class=" h-80">
+
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Automation</p>
+                                                    </div>
+
+                                                    <small class="card-text">Automate tasks and workflows with Butler
+                                                        automation.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+
+                                            <div class=" h-80">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Power-Ups</p>
+                                                    </div>
+
+
+
+
+
+                                                    <small class="card-text">Power up your teams by linking their
+                                                        favorite tools with Trello plugins.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class=" h-80">
+
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Templates</p>
+                                                    </div>
+
+
+
+
+
+                                                    <small class="card-text">Give your team a blueprint for success with
+                                                        easy-to-use templates from industry leaders and the Trello
+                                                        community.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class="h-80">
+
+                                                <div class="card-body">
+
+
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Integrations </p>
+                                                    </div>
+
+
+
+
+
+                                                    <small class="card-text">Find the apps your team is already using or
+                                                        discover new ways to get work done in Trello.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </li>
+
+
+
+                                <div class="features-border2 background-color2  ">
+                                    <li><a class="dropdown-item1  text" href="#">Meet Trello</a></li>
+                                    <div class="text">
+                                        <hr class="dropdown-divider ">
+                                    </div class="text">
+                                    <p class="text">Trello makes it easy for your team to get work done. No matter the
+                                        project, workflow, or type of team, Trello can help keep things organized. It’s
+                                        simple – sign-up, create a board, and you’re off! Productivity awaits.</p>
+                                    <button href="#" type="button" class="card btn btn-outline-secondary">Check out
+                                        Trello
+                                    </button>
+                                </div>
+
+                        </ul>
+                    </li>
+
+
+
+
+
+
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Solution
+                        </a>
+                        <ul class="dropdown-menu solution-details ">
+
+
+
+
+
+
+
+
+                            <!-- Solution -->
+
+
+
+
+
+                            <div class="d-flex background-color1">
+                                <li class="features-border"><a class="dropdown-item1" href="#">Take a page out of these
+                                        pre-built Trello playbooks designed for all teams</a>
+                                    <hr class="dropdown-divider header">
+
+                                    <div class="row row-cols-3 row-cols-md-9 g-3    ">
+                                        <div class="col   card-details card-color">
+                                            <div class="h-80">
+
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Marketing teams</p>
+                                                    </div>
+                                                    <small class="card-text">Whether launching a new product, campaign,
+                                                        or creating content, Trello helps marketing teams
+                                                        succeed.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class=" h-80">
+
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Product management</p>
+                                                    </div>
+
+                                                    <small class="card-text">Use Trello’s management boards and roadmap
+                                                        features to simplify complex projects and processes.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class=" h-80">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Engineering teams</p>
+                                                    </div>
+
+
+
+
+
+                                                    <small class="card-text">Ship more code, faster, and give your
+                                                        developers the freedom to be more agile with Trello.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class=" h-80">
+
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Design teams</p>
+                                                    </div>
+
+
+
+
+
+                                                    <small class="card-text">Empower your design teams by using Trello
+                                                        to streamline creative requests and promote more fluid
+                                                        cross-team collaboration.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class="h-80">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Startups </p>
+                                                    </div>
+                                                    <small class="card-text">From hitting revenue goals to managing
+                                                        workflows, small businesses thrive with Trello.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col card-details card-color">
+                                            <div class="h-80">
+
+                                                <div class="card-body">
+
+
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Remote teams</p>
+                                                    </div>
+
+
+
+
+
+                                                    <small class="card-text">Keep your remote team connected and
+                                                        motivated, no matter where they’re located around the
+                                                        world.</small>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+
+                                        <div class="col  ">
+                                            <div class="h-80">
+                                                <div class="">
+                                                    <div class="d-flex">
+
+                                                        <a href="#" role="button" class="button-arrow">
+                                                            <div class="">
+                                                                <p> See all teams </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+                                </li>
+
+
+
+                                <div class="features-border2 background-color2   ">
+                                    <li>
+                                        <p class="text">Our product in action</p>
+                                    </li>
+                                    <div class="text">
+                                        <hr class="dropdown-divider ">
+                                    </div>
+
+                                    <a class="text" href="#" role="button"
+                                        style="color:  black; text-decoration: none;">
+                                        <div class="text-link text-color">
+                                            <p>Use case: Project management </p>
+                                            <p class="small-text">Keep tasks in order, deadlines on track, and team
+                                                members aligned with Trello.</p>
+                                        </div>
+                                    </a>
+
+                                    <a class="text" href="#" role="button"
+                                        style="color:  black; text-decoration: none;">
+                                        <div class="text-link text-color">
+                                            <p>Use case: Brainstorming </p>
+                                            <p class="small-text">Unleash your team’s creativity and keep ideas visible,
+                                                collaborative, and actionable.</p>
+                                        </div>
+                                    </a>
+                                    <a class="text" href="#" role="button"
+                                        style="color:  black; text-decoration: none;">
+                                        <div class="text-link text-color">
+                                            <p>Use case: Meetings </p>
+                                            <p class="small-text">Empower your team meetings to be more productive,
+                                                empowering, and dare we say—fun.</p>
+                                        </div>
+                                    </a>
+
+                                    <a class="text" href="#" role="button"
+                                        style="color:  black; text-decoration: none;">
+                                        <div class="text-link text-color">
+                                            <p> See all use cases </p>
+                                        </div>
+                                    </a>
+
+
+
+                                </div>
+
+
+
+
+
+
+                        </ul>
+                    </li>
+
+
+
+
+
+                    <!-- Plans -->
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Plans
+                        </a>
+                        <ul class="dropdown-menu plans-details">
+
+
+
+
+
+                            <div class="d-flex background-color1">
+                                <li class="features-border"><a class="dropdown-item1" href="#">Take a page out of these
+                                        pre-built Trello playbooks designed for all teams</a>
+                                    <hr class="dropdown-divider header">
+                                    <div class="row row-cols-3 row-cols-md-9 g-3    ">
+                                        <div class="col   card-details card-color">
+                                            <div class="h-80">
+
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Standard
+                                                        </p>
+                                                    </div>
+                                                    <small class="card-text">For teams that need to manage more work and
+                                                        scale collaboration.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class=" h-80">
+
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Premium</p>
+                                                    </div>
+
+                                                    <small class="card-text">Best for teams up to 100 that need to track
+                                                        multiple projects and visualize work in a variety of
+                                                        ways.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col card-details card-color">
+                                            <div class=" h-80">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="images">
+                                                            <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                viewBox="0 0 64 64" width="20">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                    fill-rule="evenodd" opacity="0.5"></path>
+                                                                <path clip-rule="evenodd"
+                                                                    d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="card-title">Enterprise</p>
+                                                    </div>
+
+
+
+
+
+                                                    <small class="card-text">Everything your enterprise teams and admins
+                                                        need to manage projects.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                    <div class="col  card-size card-color ">
+                                        <!-- <div class="card-more-details h-80"> -->
+                                        <div class=" h-80">
+                                            <div class="">
+                                                <div class="d-flex">
+
+                                                    <div>
+                                                        <div class="d-flex">
+                                                            <div class="images">
+
+                                                                <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                    viewBox="0 0 64 64" width="20">
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                        fill-rule="evenodd" opacity="0.5"></path>
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                        fill-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-title">Free plan</p>
+                                                        </div>
+
+
+
+
+
+                                                        <small class="card-text">For individuals or small teams looking
+                                                            to keep work organized.</small>
+                                                    </div>
+                                                    <div>
+                                                        <button type="button" class="card btn btn-outline-tour">Take a
+                                                            tour of Trello</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </li>
+
+
+
+                                <div class="features-border2 background-color2   ">
+                                    <li>
+                                        <p class="text">Compare plans & pricing</p>
+                                    </li>
+                                    <div class="text">
+                                        <hr class="dropdown-divider ">
+                                    </div>
+
+                                    <a class="text" href="#" role="button"
+                                        style="color:  black; text-decoration: none;">
+                                        <div class="text-link text-color">
+
+                                            <p class="small-text">Whether you’re a team of 2 or 2,000, Trello’s flexible
+                                                pricing model means you only pay for what you need.</p>
+                                        </div>
+                                    </a>
+
+
+                                    <button href="#" type="button" class="card btn btn-outline-secondary">View Trello
+                                        pricing
+                                    </button>
+
+
+
+
+                                </div>
+
+
+
+                        </ul>
+                    </li>
+
+
+
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link ">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Resources
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-resources-manu">
+
+
+
+                            <!-- Resources -->
+
+                            <div class="d-flex background-color1">
+                                <div class="d-flex">
+                                    <li class="features-border"><a class="dropdown-item1" href="#">Learn & connect</a>
+                                        <hr class="dropdown-divider header">
+                                        <!-- <a class="dropdown-item1" href="#">Another action</a> -->
+                                        <div class="row row-cols-3 row-cols-md-9 g-3    ">
+                                            <div class="col   card-details card-color">
+                                                <div class="h-80">
+
+                                                    <div class="card-body">
+                                                        <div class="d-flex">
+                                                            <div class="images">
+                                                                <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                    viewBox="0 0 64 64" width="20">
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                        fill-rule="evenodd" opacity="0.5"></path>
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                        fill-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-title">Trello guide</p>
+                                                        </div>
+                                                        <small class="card-text">Our easy to follow workflow guide will
+                                                            take you
+                                                            from project set-up to Trello expert in no time.</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col card-details card-color">
+                                                <div class=" h-80">
+
+                                                    <div class="card-body">
+                                                        <div class="d-flex">
+                                                            <div class="images">
+                                                                <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                    viewBox="0 0 64 64" width="20">
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                        fill-rule="evenodd" opacity="0.5"></path>
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                        fill-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-title">Remote work guide</p>
+                                                        </div>
+
+                                                        <small class="card-text">The complete guide to setting up your
+                                                            team for
+                                                            remote work success.</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col card-details card-color">
+                                                <!-- <div class="card-more-details h-80"> -->
+                                                <div class=" h-80">
+                                                    <div class="card-body">
+                                                        <div class="d-flex">
+                                                            <div class="images">
+                                                                <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                    viewBox="0 0 64 64" width="20">
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                        fill-rule="evenodd" opacity="0.5"></path>
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                        fill-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-title">Webinars</p>
+                                                        </div>
+
+
+
+
+
+                                                        <small class="card-text">Enjoy our free Trello webinars and
+                                                            become a
+                                                            productivity professional.</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col card-details card-color">
+                                                <div class=" h-80">
+
+                                                    <div class="card-body">
+                                                        <div class="d-flex">
+                                                            <div class="images">
+                                                                <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                    viewBox="0 0 64 64" width="20">
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                        fill-rule="evenodd" opacity="0.5"></path>
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                        fill-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-title">Customer Stories</p>
+                                                        </div>
+
+
+
+
+
+                                                        <small class="card-text">This is a longer card with supporting
+                                                            text
+                                                            below as a natural lead-in to additional content. This
+                                                            content
+                                                            is a little bit longer.</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col card-details card-color">
+                                                <div class="h-80">
+                                                    <div class="card-body">
+                                                        <div class="d-flex">
+                                                            <div class="images">
+                                                                <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                    viewBox="0 0 64 64" width="20">
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                        fill-rule="evenodd" opacity="0.5"></path>
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                        fill-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-title">Developers </p>
+                                                        </div>
+                                                        <small class="card-text">The sky's the limit in what you can
+                                                            deliver to Trello users in your Power-Up!</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col card-details card-color">
+                                                <div class="h-80">
+
+                                                    <div class="card-body">
+
+
+                                                        <div class="d-flex">
+                                                            <div class="images">
+                                                                <svg fill="currentColor" height="20" aria-hidden="true"
+                                                                    viewBox="0 0 64 64" width="20">
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                                                        fill-rule="evenodd" opacity="0.5"></path>
+                                                                    <path clip-rule="evenodd"
+                                                                        d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                                                        fill-rule="evenodd"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-title">Help resources</p>
+                                                        </div>
+
+
+
+
+
+                                                        <small class="card-text">Need help? Articles and FAQs to get you
+                                                            unstuck.</small>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                    </li>
+
+                                </div>
+
+
+
+
+
+
+
+                                <div class="features-border2 background-color2   ">
+                                    <li>
+                                        <p class="text">Latest from the Trello blog</p>
+                                    </li>
+                                    <div class="text">
+                                        <hr class="dropdown-divider border2 ">
+                                    </div>
+                                    <img src="https://blog.trello.com/hubfs/The_Trello_Resource_Management_Tools_You_Need_Now-png.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <small>USE CASES | TRALLO TIPS</small>
+
+                                        <p class="card-text">The Trello resources managemant tools and
+                                            features you need now</p>
+                                    </div>
+
+
+
+
+
+
+
+
+                                    <a class="text" href="#" role="button"
+                                        style="color:  black; text-decoration: none;">
+                                        <div class="card-blog-link">
+                                            <p> More bolg posts </p>
+                                        </div>
+                                    </a>
+
+
+
+                                </div>
+
+
+
+
+
+
+                        </ul>
+                    </li>
+
+
+
+            </div>
+
+
+
+
+            </ul>
+
+            <form class="d-flex" role="search">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn me-md-2" type="button">Log in</button>
+                    <button class="btn btn-primary" type="button">Get Trello for free</button>
+                </div>
+
+            </form>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>
