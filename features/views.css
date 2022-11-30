@@ -1,0 +1,29 @@
+.text-middle{
+text-align: center;
+}
+
+.middle-position{
+    margin-left: 120px;
+    margin-right: 140px;
+
+}
+
+.line-border{
+    height: 4px; width: 57%; background-color:blue ; border-radius: 30px;
+}
+
+.card-border{
+    margin-left: 122px;
+}
+
+.end-color{
+background-color: #f4f5ff;
+height: 311px;
+
+}
+.text{
+    margin-top: -252px;
+}
+.top-space{
+    margin-top: 70px;
+}
