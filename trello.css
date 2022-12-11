@@ -606,7 +606,7 @@ element.style {
     text-align: center;
     width: 75%;
     margin-top: 80px;
-    margin-left: 43px;
+    margin-left: 100px;
     color: white;
     font-size: 21px;
 }
@@ -721,10 +721,17 @@ element.style {
 }
 
 .sign-up-button {
-    margin-left: 204px;
-    height: 43px;
-}
 
+    /* height: 50px; */
+    margin-left: 15px;
+    width: 153px;
+}
+.btn-signUP {
+    margin-right: 30px;
+    margin-left: 15px;
+    height: 50px;
+    width: 93%;
+}
 .card1 {
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
@@ -1006,14 +1013,11 @@ footer {
     width: 21%;
 }
 
-.btn-signUP {
-    margin-right: 30px;
-    width: 50%;
-}
+
 
 .btn.btn-primary {
     margin-right: 30px;
-    /* width: 100%; */
+  height: 50px;
 }
 
 .background-color-end {
@@ -1034,3 +1038,5 @@ height: 306px;
 border-radius: 10px;
 box-shadow: 0px 4px 5px 7px rgb(84 21 21 / 20%);     margin-left: 38px;
 }
+
+
