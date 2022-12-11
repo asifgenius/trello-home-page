@@ -279,6 +279,9 @@
 .border { 
     width: 100%;
     /* margin-left: 70px; */
+ 
+        /* border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important; */
+    
 
 }
 .border1{
@@ -550,7 +553,7 @@ element.style {
     list-style: none;
     background-color: var(--bs-dropdown-bg);
     background-clip: padding-box;
-    border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+    /* border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color); */
     /* border-radius: var(--bs-dropdown-border-radius); */
 }
 
@@ -1016,4 +1019,18 @@ footer {
 .background-color-end {
     background-color: rgb(172, 11, 172);
     height: 300px;
+}
+.Resources-tips-card
+{
+    width: 74%;
+    height: 306px;
+    border-radius: 10px;
+    margin-left: 38px;
+}
+.Resources-tips-card:hover
+{
+    width: 74%;
+height: 306px;
+border-radius: 10px;
+box-shadow: 0px 4px 5px 7px rgb(84 21 21 / 20%);     margin-left: 38px;
 }
