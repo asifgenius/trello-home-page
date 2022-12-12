@@ -155,3 +155,18 @@
 
 
 /* //////////////////////////////////////////////// carousel */
+
+
+
+
+.team-solutions{
+    text-align: center; margin-top: 20px;
+        margin-bottom: 108px;
+}
+.team-solutions-header{
+    width: 50%;
+    margin-left: 340px;
+}
+.team-solutions-text{
+    width: 52%; margin-left:334px
+}
