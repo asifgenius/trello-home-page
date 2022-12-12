@@ -336,9 +336,16 @@
 }
 
 
+.power-up{
+    margin-left: 230px; margin-right:18px
+}
 
-
-
+.power-up-image{
+    width: 80%; margin-left: -105px; margin-top: 0px;
+}
+.power-up-div{
+    margin-left: -140px;
+}
 
 
 
