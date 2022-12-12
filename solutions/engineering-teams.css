@@ -491,8 +491,40 @@
 }
 
 
+.trello-business{
+    margin-left: 125px; margin-right:60px; margin-top: -213px;
+}
 
-
+.trello-text-div{
+    text-align: center;
+}
+.free-div{
+    height: 475px;
+}
+.free-button{
+    margin-top: 165px;
+}
+.standard-div{
+    height: 475px;  
+}
+.standard-button{
+    margin-top: 140px;
+}
+.premium-div{
+    height: 475px;
+}
+.premium-button{
+    margin-top: 92px;
+}
+.enterprise-div{
+    height: 475px;
+}
+.enterprise-link{
+    appearance: none;
+}
+.enterprise-button{
+    margin-top: 3px;
+}
 
 
 
