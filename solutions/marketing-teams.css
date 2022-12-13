@@ -161,3 +161,21 @@
 .join-teams-image {
 	height: 80px;
 }
+
+.teams-workspace {
+	text-align: center;
+}
+
+.teams-workspace-text {
+	width: 51%;
+	text-align: center;
+	margin-left: 350px;
+	font-size: 20px;
+}
+
+.teams-workspace-link {
+	font-size: 20px;
+	margin-top: 130px;
+}
+
+
