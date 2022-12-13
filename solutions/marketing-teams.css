@@ -262,3 +262,17 @@
 	margin-top: 30px;
 	background-color: aqua;
 }
+.visualize {
+	margin-left: 125px;
+	margin-right: 60px
+}
+
+.visualize-header {
+	width: 68%;
+}
+
+.visualize-image {
+	width: 110%;
+	margin-left: -105px;
+	height: 330px;
+}
