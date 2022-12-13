@@ -1,23 +1,25 @@
-.p-text{
+.p-text {
     font-size: 25px;
     color: rgb(9, 30, 66);
     margin-top: 12px;
     width: 433px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: var(--bs-nav-pills-link-active-color);
     background-color: white;
     box-shadow: 5px 5px 21px grey;
 }
 
-.p-text-header{
+.p-text-header {
     font-size: 25px;
     color: white;
     margin-top: 12px;
     width: 433px;
 }
-/* ///////////////////// */
+
+/*  */
 .card {
     width: 100%;
     height: 30px;
@@ -28,6 +30,7 @@
     margin-top: -32px;
     font-size: 54px;
 }
+
 .text-button-position {
 
     margin-top: -3px;
@@ -37,7 +40,7 @@
 .btn-outline-tour {
     --bs-btn-color: #080808;
     --bs-btn-border-color: #5734f3;
-   
+
     --bs-btn-hover-color: #000;
     --bs-btn-hover-bg: #f9edc9;
     --bs-btn-hover-border-color: #ffc10700;
@@ -87,4 +90,39 @@
     background-clip: border-box;
     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
     border-radius: var(--bs-card-border-radius);
+}
+
+/* marketing-teams */
+
+
+.marketing-teams {
+    background-color: #1e2db7;
+    height: 360px;
+}
+
+.marketing-teams-div {
+    justify-content: space-between;
+}
+
+.marketing-teams-image {
+    height: 360px;
+}
+
+.marketing-teams-image {
+    height: 360px;
+}
+
+.marketing-teams-text-div {
+    text-align: center;
+    margin-top: -340px;
+    color: white;
+}
+
+.marketing-teams-link {
+    color: white;
+}
+
+.marketing-teams-text {
+    width: 50%;
+    margin-left: 350px
 }
