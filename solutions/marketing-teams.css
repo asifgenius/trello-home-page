@@ -292,3 +292,17 @@
 .power-up-div {
 	margin-left: 310px;
 }
+.move-work {
+	margin-left: 125px;
+	margin-right: 60px
+}
+
+.move-work-header {
+	width: 68%;
+}
+
+.move-work-image {
+	width: 110%;
+	margin-left: -105px;
+	height: 330px;
+}
