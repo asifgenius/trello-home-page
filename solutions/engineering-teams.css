@@ -38,20 +38,18 @@
 
 .container-fluid {
     font-size: 15px;
-    height: 60px;
     box-shadow: -1px 23px 39px -21px gray;
 
+    height: 75px;
+}
+.nav-div{
     position: sticky;
     top: 0;
     background: white;
     height: 75px;
 }
-
 .navbar {
-    height: 30px;
-    position: sticky;
-    top: 0;
-    background: white;
+  
     height: 75px;
 }
 .nav-item {

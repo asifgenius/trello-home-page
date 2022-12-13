@@ -14,48 +14,15 @@
 
 .nav-item {
     color: black;
-
 }
 
 .dropdown-menu.show {
     display: block;
-
 }
 
 .dropdown-resources-manu.show {
     display: block;
     margin-left: -420px;
-}
-
-.dropdown-item1 {
-    display: block;
-    width: 100%;
-    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
-    clear: both;
-    font-weight: 600;
-    color: #949699;
-    text-align: inherit;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-
-}
-
-.dropdown-item2 {
-    display: block;
-    width: 100%;
-    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
-    clear: both;
-    font-weight: 600;
-    color: #949699;
-    text-align: inherit;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-
-    background-color: rgba(245, 245, 245, 0.966);
 }
 
 .nav-link {
@@ -64,7 +31,6 @@
     --bs-nav-link-font-weight: ;
     --bs-nav-link-color: rgb(0 0 0);
     --bs-nav-link-hover-color: rgb(6 46 239 / 70%);
-
     --bs-nav-link-disabled-color: rgb(0 0 0);
     display: flex;
     flex-direction: column;
@@ -72,11 +38,6 @@
     margin-bottom: 0;
     list-style: none;
 }
-
-
-/* .dropdown-menu {
-    width: 1380%;
-} */
 
 .dropdown-menu[data-bs-popper] {
     top: 172%;
@@ -91,20 +52,7 @@
 }
 
 .background-color {
-
-
     background-color: rgb(255, 250, 250);
-}
-
-.card-broder1 {
-    margin-right: 60px;
-    margin-left: 120px;
-}
-
-.card-broder2 {
-    margin-left: 80px;
-    margin-right: 80px;
-    background-color: rgb(255, 255, 255);
 }
 
 .more-blogs-card {
@@ -115,19 +63,6 @@
     width: 100%;
     height: 30px;
 }
-
-.broder2 {
-    width: 70%;
-    margin-left: 120px;
-    height: 300%;
-    background-color: rgba(245, 245, 245, 0.966);
-}
-
-.card-blog-link {
-    margin-top: 20px;
-    margin-left: 70px;
-}
-
 .background-color-line {
     background-color: rgba(245, 245, 245, 0.966);
 }
@@ -135,12 +70,6 @@
 .nev-menu-details {
     margin-left: 50px;
 }
-
-
-
-
-
-
 
 .dropdown-Features-details {
     margin-left: 830px;
@@ -230,13 +159,11 @@
     background-color: var(--bs-dropdown-bg);
     background-clip: padding-box;
     border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
-    /* border-radius: var(--bs-dropdown-border-radius); */
 }
 
 .dropdown-menu {
     width: 1380%;
 }
-
 
 .solution-details.show {
     width: 1457%;
@@ -258,56 +185,34 @@
     width: 100%;
 }
 
-
-
-
-.features-border { 
+.features-border {
     width: 100%;
-    /* margin-left: 70px; */
 
 }
-.features-border2 {
+
+.border {
+    width: 100%;
+}
+
+.navbar-border {
     width: 30%;
     margin-left: 903px;
     margin-top: -360px;
     background-color: rgb(240 240 240);
     height: 100%;
-
-
+    margin-top: -284px;
 }
 
-.border { 
+.solution-border {
     width: 100%;
-    /* margin-left: 70px; */
- 
-        /* border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important; */
-    
-
 }
-.border1{
+
+.solution-border-latest {
     width: 30%;
     margin-left: 903px;
     margin-top: -360px;
     background-color: rgb(240 240 240);
     height: 100%;
-
-}
-.solution-border { 
-    width: 100%;
-    /* margin-left: 70px; */}
-
-.solution-border2 {
-    width: 30%;
-    margin-left: 903px;
-    margin-top: -360px;
-    background-color: rgb(240 240 240);
-    height: 100%;
-
-
-}
-.border2 {
-    width: 100%;
-    margin-right: 80px;
 }
 
 .text {
@@ -316,13 +221,11 @@
 
 }
 
-
-    .text-link {
-        margin-left: 30px;
-        margin-right: 95px;
-        cursor: pointer;
-    }
-
+.text-link {
+    margin-left: 30px;
+    margin-right: 95px;
+    cursor: pointer;
+}
 
 .small-text {
     font-size: 12px;
@@ -338,11 +241,6 @@
     ;
 }
 
-/* .background-color2 {
-    background-color: rgb(240 240 240);
-    width: 82%;
-} */
-
 .btn {
     margin-left: 30px;
     width: 25%;
@@ -355,29 +253,17 @@
     margin-top: -2px;
 }
 
-
-
-
-
 .container-fluid {
     font-size: 16px;
     height: 138px;
     margin-top: 20px;
 }
 
-
-
-
-
-
-
 element.style {
     margin-top: 20px;
     margin-right: 30px;
     width: 100%;
 }
-
-
 
 .btn.btn.me-md-2 {
     margin-right: 30px;
@@ -389,12 +275,6 @@ element.style {
     margin-right: 30px;
     width: 100%;
 }
-
-
-
-
-
-
 
 .card-color {
     --bs-btn-color: #6c757d;
@@ -436,7 +316,6 @@ element.style {
     font-weight: var(--bs-btn-font-weight);
     line-height: var(--bs-btn-line-height);
     color: var(--bs-btn-color);
-    /* text-align: center; */
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer;
@@ -453,7 +332,6 @@ element.style {
     margin-left: 30px;
     width: 29%;
 }
-
 
 .card-more-details {
     --bs-card-spacer-y: 1rem;
@@ -496,8 +374,6 @@ element.style {
     border-color: white;
 }
 
-
-
 .btn-outline-secondary1 {
     --bs-btn-color: #525252;
     --bs-btn-border-color: #878686;
@@ -515,12 +391,8 @@ element.style {
     --bs-gradient: none;
 }
 
-
-
-
 .dropdown-menu {
     --bs-dropdown-zindex: 1000;
-
     --bs-dropdown-padding-x: 0;
     --bs-dropdown-padding-y: 0.5rem;
     --bs-dropdown-spacer: 0.125rem;
@@ -529,7 +401,6 @@ element.style {
     --bs-dropdown-bg: #fff;
     --bs-dropdown-border-color: var(--bs-border-color-translucent);
     --bs-dropdown-border-radius: 0.375rem;
-
     --bs-dropdown-link-color: #212529;
     --bs-dropdown-link-hover-color: #1e2125;
     --bs-dropdown-link-hover-bg: #e9ecef;
@@ -553,10 +424,7 @@ element.style {
     list-style: none;
     background-color: var(--bs-dropdown-bg);
     background-clip: padding-box;
-    /* border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color); */
-    /* border-radius: var(--bs-dropdown-border-radius); */
 }
-
 
 .button-arrow {
     color: #8b8787;
@@ -585,22 +453,14 @@ element.style {
     height: 52px;
 }
 
-
 .card-size {
     width: 100%;
     height: 90px;
-    /* background-color: #f9edc9; */
     background-color: #f9c9c900;
     margin-left: 30px;
 }
 
-
-
-
-
-
-
-/* /////////////home page */
+/* home page */
 
 .text-middle {
     text-align: center;
@@ -610,7 +470,6 @@ element.style {
     color: white;
     font-size: 21px;
 }
-
 
 .trello-views-text {
     text-align: center;
@@ -622,53 +481,8 @@ element.style {
     font-size: 21px;
 }
 
-.trello-views-button {
-    text-align: center;
-    width: 27%;
-    margin-left: 235px;
-    margin-top: 27px;
-}
-
-.header-img {
-    width: 20%;
-    margin-top: 56px;
-}
-
-.header-img2 {
-    width: 69%;
-    margin-top: -316px;
-    /* margin-bottom: 1221px; */
-    height: 491px;
-    margin-left: 225px;
-    /* margin-right: 20px; */
-}
-
-.header-img3 {
-    /* width: 69%; */
-    margin-top: -74px;
-    margin-bottom: 116px;
-    /* height: 491px; */
-    margin-left: 100px;
-    /* margin-right: -97px; */
-    /* margin-right: 20px; */
-}
-
-.header-signup-position {
-    margin-left: 90px;
-    margin-top: 39px;
-
-}
-
-.text-center {
-    text-align: center;
-
-    margin-top: 20px;
-}
-
 .card-image {
-
     height: 108px;
-
     margin-left: -107px;
 }
 
@@ -702,9 +516,9 @@ element.style {
     margin-left: 111px;
 }
 
-.form-control1 {
+.form-control {
     display: block;
-    width: 190%;
+    width: 321px;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -721,18 +535,19 @@ element.style {
 }
 
 .sign-up-button {
-
-    /* height: 50px; */
     margin-left: 15px;
     width: 153px;
 }
+
 .btn-signUP {
     margin-right: 30px;
     margin-left: 15px;
     height: 50px;
     width: 93%;
 }
-.card1 {
+
+
+.integrations {
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
     --bs-card-title-spacer-y: 0.5rem;
@@ -759,9 +574,42 @@ element.style {
     background-clip: border-box;
     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
     border-radius: var(--bs-card-border-radius);
+    width: 30%;
+    background-color: rgb(249 249 249);
 }
 
-.card2 {
+.butler-automation {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: 0.375rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    width: 30%;
+    background-color: rgb(249 249 249);
+}
+
+.trello-enterprise {
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
     --bs-card-title-spacer-y: 0.5rem;
@@ -946,6 +794,103 @@ footer {
     font-size: 23px;
 }
 
+.btn.btn-trello-price {
+    margin-right: 30px;
+    width: 21%;
+}
+
+.btn.btn-primary {
+    margin-right: 30px;
+    height: 50px;
+}
+
+.background-color-end {
+    background-color: rgb(172, 11, 172);
+    height: 300px;
+}
+
+.Resources-tips-card {
+    width: 74%;
+    height: 306px;
+    border-radius: 10px;
+    margin-left: 38px;
+}
+
+.Resources-tips-card:hover {
+    width: 74%;
+    height: 306px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px 7px rgb(84 21 21 / 20%);
+    margin-left: 38px;
+}
+
+.card-button:focus {
+    background-color: red;
+}
+
+/* home page */
+
+.trello-img {
+    width: 69%;
+    margin-top: -316px;
+    height: 491px;
+    margin-left: 225px;
+}
+
+.trello-img-right {
+    margin-top: -74px;
+    margin-bottom: 116px;
+    margin-left: 100px;
+}
+
+.trello-views-button {
+    text-align: center;
+    width: 27%;
+    margin-left: 235px;
+    margin-top: 27px;
+}
+
+.trello-img-left {
+    width: 20%;
+    margin-top: 56px;
+}
+
+.trello-div {
+    margin-left: 152px;
+    margin-right: 106px;
+}
+
+.trello-card-div {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: 0.375rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    width: 20rem;
+    margin-top: 30px;
+}
+
 .work-flow-card {
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
@@ -975,9 +920,387 @@ footer {
     background-clip: border-box;
     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
     border-radius: var(--bs-card-border-radius);
+    width: 22rem;
+    height: 228px;
+    cursor: pointer;
+    margin-bottom: 370px;
 }
 
-.card3 {
+.work-flow-previous {
+    margin-left: 841px;
+}
+
+.work-flow-next {
+    margin-left: 10px;
+}
+
+.project-management {
+    text-decoration: none;
+    color: black
+}
+
+.project-management-div {
+    width: 100%;
+    height: 48px;
+    margin-top: 0px;
+    background-color: #ff806f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-management-image {
+    width: 17%;
+    height: 47px;
+    margin-top: 25px;
+    background-color: white;
+    padding: 6px;
+    margin-right: 255px;
+}
+
+.project-management-header {
+    margin-right: 43px;
+    margin-top: 11px;
+}
+
+.project-management-text {
+    margin-right: 28px;
+}
+
+.brainstorming {
+    margin-left: 20px;
+}
+
+.brainstorming-link {
+    text-decoration: none;
+    color: black
+}
+
+.brainstorming-div {
+    width: 100%;
+    height: 48px;
+    margin-top: 0px;
+    background-color: #77c3ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.brainstorming-image {
+    width: 17%;
+    height: 47px;
+    margin-top: 25px;
+    background-color: white;
+    padding: 6px;
+    margin-right: 255px;
+}
+
+.brainstorming-header {
+    margin-right: 43px;
+    margin-top: 11px;
+}
+
+.brainstorming-text {
+    margin-right: 28px;
+}
+
+.meetings {
+    margin-left: 20px;
+}
+
+.meetings-link {
+    text-decoration: none;
+    color: black
+}
+
+.meetings-div {
+    width: 100%;
+    height: 48px;
+    margin-top: 0px;
+    background-color: #71ffce;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.meetings-image {
+    width: 17%;
+    height: 47px;
+    margin-top: 25px;
+    background-color: white;
+    padding: 6px;
+    margin-right: 255px;
+}
+
+.meetings-header {
+    margin-right: 43px;
+    margin-top: 11px;
+}
+
+.meetings-text {
+    margin-right: 28px;
+}
+
+.task-management {
+    margin-left: 20px;
+}
+
+.task-management-div {
+    width: 100%;
+    height: 48px;
+    margin-top: 0px;
+    background-color: #fff86f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.task-management-image {
+    width: 17%;
+    height: 47px;
+    margin-top: 25px;
+    background-color: white;
+    padding: 6px;
+    margin-right: 255px;
+}
+
+.task-management-header {
+    margin-right: 43px;
+    margin-top: 11px;
+}
+
+.task-management-text {
+    margin-right: 28px;
+}
+
+.crm {
+    margin-left: 20px;
+}
+
+.crm-link {
+    text-decoration: none;
+    color: black
+}
+
+.crm-div {
+    width: 100%;
+    height: 48px;
+    margin-top: 0px;
+    background-color: #6fe1ff;
+    ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.crm-image {
+    width: 17%;
+    height: 47px;
+    margin-top: 25px;
+    background-color: white;
+    padding: 6px;
+    margin-right: 255px;
+}
+
+.crm-header {
+    margin-right: 43px;
+    margin-top: 11px;
+}
+
+.crm-text {
+    margin-right: 28px;
+}
+
+
+
+.editorial-calendar {
+    margin-left: 20px;
+}
+
+.editorial-calendar-link {
+    text-decoration: none;
+    color: black
+}
+
+.editorial-calendar-div {
+    width: 100%;
+    height: 48px;
+    margin-top: 0px;
+    background-color: #b76fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.editorial-calendar-image {
+    width: 17%;
+    height: 47px;
+    margin-top: 25px;
+    background-color: white;
+    padding: 6px;
+    margin-right: 255px;
+}
+
+.editorial-calendar-header {
+    margin-right: 43px;
+    margin-top: 11px;
+}
+
+.editorial-calendar-text {
+    margin-right: 28px;
+}
+
+.explore-button {
+    margin-left: 27px;
+}
+
+.work {
+    justify-content: space-between;
+}
+
+.view-trello {
+    margin-left: 152px;
+    margin-right: 225px;
+    margin-top: -896px;
+}
+
+.hit-deadlines {
+    max-width: 1201px;
+    height: 380px;
+}
+
+.hit-deadlines-image {
+    max-width: 553px;
+    margin-left: 30px;
+    height: 330px;
+}
+
+.hit-deadlines-div {
+    margin-left: 250px;
+    width: 66%;
+    margin-right: 20px;
+}
+
+.hit-deadlines-svg {
+    margin-right: 20px;
+}
+
+.hit-deadlines-text {
+    margin-top: 2px;
+}
+
+.hit-deadlines-small-text {
+    font-weight: bold;
+    color: black;
+}
+
+.hit-deadlines-weekly-text {
+    margin-top: 20px;
+}
+
+.stay-on {
+    max-width: 1201px;
+    height: 380px;
+}
+
+.stay-on-div {
+    margin-left: 372px;
+    width: 66%;
+}
+
+.stay-on-div-image {
+    max-width: 553px;
+    margin-left: 30px;
+    height: 330px;
+}
+
+.tasks-div {
+    margin-left: 30px;
+    width: 60%;
+    margin-right: 20px;
+    margin-top: -363px;
+}
+
+.tasks-svg {
+    margin-right: 20px;
+}
+
+.tasks-text {
+    margin-top: 2px;
+}
+
+.tasks-small-text {
+    font-weight: bold;
+    color: black;
+}
+
+.tasks-text-work {
+    margin-top: 20px;
+}
+
+.trello-text-survey {
+    max-width: 1100px;
+    margin-top: 85px;
+}
+
+.trello-text-survey-div {
+    width: 122%;
+    margin-top: -258px;
+}
+
+.trello-survey-line {
+    margin-top: 120px;
+    width: 18%;
+    color: black;
+}
+
+.trello-survey-image {
+    margin-left: 420px;
+}
+
+.trello-survey-div {
+    background-color: rgb(225 50 251);
+    background-color: rgb(225 50 251);
+    height: 398px;
+    width: 34%;
+    margin-left: 640px;
+    margin-top: -398px;
+}
+
+.trello-survey-header {
+    width: 100%;
+    color: white;
+    margin-left: 18px;
+}
+
+.trello-survey-link {
+    color: white;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.trello-business {
+    margin-left: 125px;
+    margin-right: 60px;
+    margin-top: -213px;
+}
+
+.trello-text-div {
+    text-align: center;
+}
+
+.free-div {
+    height: 475px;
+}
+
+.free-button {
+    margin-top: 165px;
+}
+
+.standard-div {
+    height: 475px;
+}
+
+.standard-button {
+    margin-top: 140px;
+}
+
+.premium-div {
+    height: 475px;
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
     --bs-card-title-spacer-y: 0.5rem;
@@ -1008,37 +1331,62 @@ footer {
     border-radius: var(--bs-card-border-radius);
 }
 
-.btn.btn-trello-price {
-    margin-right: 30px;
-    width: 21%;
+.premium-button {
+    margin-top: 92px;
+}
+
+.enterprise-div {
+    height: 475px;
+}
+
+.enterprise-link {
+    appearance: none;
+}
+
+.enterprise-button {
+    margin-top: 3px;
+}
+
+.join-teams {
+    margin-left: 324px;
+    margin-top: 103px;
+}
+
+.join-teams-image {
+    margin-left: 180px;
+    margin-top: 103px;
+}
+
+.header-signup-position {
+    margin-left: 90px;
+    margin-top: 39px;
+
+}
+
+.text-center {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.footer-trello {
+    margin-left: 152px;
+    margin-right: 106px;
 }
 
 
-
-.btn.btn-primary {
-    margin-right: 30px;
-  height: 50px;
+.footer-trello-svg {
+    margin-top: 30px;
 }
 
-.background-color-end {
-    background-color: rgb(172, 11, 172);
-    height: 300px;
-}
-.Resources-tips-card
-{
-    width: 74%;
-    height: 306px;
-    border-radius: 10px;
-    margin-left: 38px;
-}
-.Resources-tips-card:hover
-{
-    width: 74%;
-height: 306px;
-border-radius: 10px;
-box-shadow: 0px 4px 5px 7px rgb(84 21 21 / 20%);     margin-left: 38px;
+
+.footer-trello-div {
+    margin-left: 152px;
+    margin-right: 106px;
 }
 
-.card-button:focus
-{background-color:red;
+
+.footer-trello-atlassian {
+    margin-left: 300px;
+    color: white;
 }
