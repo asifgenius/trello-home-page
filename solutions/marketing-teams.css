@@ -126,3 +126,23 @@
     width: 50%;
     margin-left: 350px
 }
+
+
+.trello {
+    margin-left: 230px;
+    margin-right: 112px
+}
+
+.trello-image {
+    width: 110%;
+    margin-left: -105px;
+    height: 300px;
+}
+
+.trello-div {
+    width: 75%;
+}
+
+.trello-text {
+    width: 95%
+}
