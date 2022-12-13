@@ -292,6 +292,7 @@
 .power-up-div {
 	margin-left: 310px;
 }
+
 .move-work {
 	margin-left: 125px;
 	margin-right: 60px
@@ -306,28 +307,43 @@
 	margin-left: -105px;
 	height: 330px;
 }
-.resources{
-	background-color:#e7e7e7;height: 870px;
+
+.resources {
+	background-color: #e7e7e7;
+	height: 870px;
 }
 
-.resources-div{
-	margin-left: 125px; margin-right:60px;
+.resources-div {
+	margin-left: 125px;
+	margin-right: 60px;
 }
-.resources-header{
+
+.resources-header {
 	width: 68%;
 }
-.available{
-	background-color: rgb(4, 4, 70); border-radius: 10px;
+
+.available {
+	background-color: rgb(4, 4, 70);
+	border-radius: 10px;
 }
-.available-div{
-	margin-left: 30px; margin-right: 30px; justify-content: space-between;
+
+.available-div {
+	margin-left: 30px;
+	margin-right: 30px;
+	justify-content: space-between;
 }
-.available-text-div{
-	color: white; margin-top: 30px; height: 127px;
+
+.available-text-div {
+	color: white;
+	margin-top: 30px;
+	height: 127px;
 }
-.available-text-link{
-	background-color: white; margin-top: 70px;
+
+.available-text-link {
+	background-color: white;
+	margin-top: 70px;
 }
+
 .trello-business {
 	margin-left: 125px;
 	margin-right: 60px;
@@ -400,4 +416,30 @@
 
 .enterprise-button {
 	margin-top: 3px;
+}
+
+.sign-up {
+	margin-top: 8px;
+	background-color: #6e1ef9;
+	height: 109px;
+}
+
+.sign-up-div {
+	margin-left: 125px;
+	margin-right: 60px;
+}
+
+.sign-up-text-div {
+	margin-left: 30px;
+	margin-right: 30px;
+	justify-content: space-between;
+}
+
+.sign-up-text {
+	color: white;
+}
+
+.sign-up-text-link {
+	background-color: white;
+	margin-top: 35px;
 }
