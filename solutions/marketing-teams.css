@@ -179,3 +179,86 @@
 }
 
 
+
+.editorial-caledar {
+	background-color: #d5ffff;
+}
+
+.editorial-caledar-button {
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 27%;
+	border-radius: 4px;
+}
+
+.editorial-caledar-div {
+	height: 182px;
+	width: 99%;
+
+	border-radius: 4px;
+}
+
+.editorial-caledar-header {
+	color: rgb(9, 9, 10);
+	font-weight: bold;
+}
+
+.editorial-caledar-text {
+	color: rgb(9, 30, 66);
+	height: 129px;
+}
+
+.go-to-market-button {
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 27%;
+}
+
+.go-to-market-header {
+	color: rgb(9, 30, 66);
+	font-weight: bold;
+}
+
+.go-to-market-text {
+	color: rgb(9, 30, 66);
+	height: 129px;
+}
+
+.email-workflow-button {
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 27%;
+}
+
+.email-workflow-header {
+	color: rgb(9, 30, 66);
+	font-weight: bold;
+}
+
+.email-workflow-text {
+	color: rgb(9, 30, 66);
+	height: 129px;
+}
+
+.editorial-caledar-image {
+	width: 505%;
+	margin-left: -607px;
+	height: 490px;
+	margin-top: 30px;
+	background-color: aqua;
+}
+
+.go-to-market-image {
+	width: 505%;
+	margin-left: -607px;
+	height: 490px;
+	margin-top: 30px;
+}
+
+.email-workflow-image {
+	width: 505%;
+	margin-left: -607px;
+	height: 490px;
+	margin-top: 30px;
+	background-color: aqua;
+}
