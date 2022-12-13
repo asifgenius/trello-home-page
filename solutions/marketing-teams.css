@@ -262,6 +262,7 @@
 	margin-top: 30px;
 	background-color: aqua;
 }
+
 .visualize {
 	margin-left: 125px;
 	margin-right: 60px
@@ -275,4 +276,19 @@
 	width: 110%;
 	margin-left: -105px;
 	height: 330px;
+}
+
+.power-up {
+	margin-left: 230px;
+	margin-right: 18px
+}
+
+.power-up-image {
+	width: 170%;
+	margin-left: -105px;
+	margin-top: 0px;
+}
+
+.power-up-div {
+	margin-left: 310px;
 }
