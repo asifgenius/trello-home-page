@@ -148,4 +148,56 @@
 
 
 
-/* //////////////////////////////////////////////// carousel */
+/* //////////////////////////////////////////////// carousel product*/
+
+.team-solutions {
+    background-color: #1e2db7;
+    height: 360px;
+}
+
+.team-solutions-div {
+    justify-content: space-between;
+}
+
+.team-solutions-image {
+    height: 360px;
+}
+
+.team-solutions-text-div {
+    text-align: center;
+    margin-top: -340px;
+    color: white;
+}
+
+.team-solutions-text-link {
+    color: white;
+}
+
+.team-solutions-text-header {
+    width: 50%;
+    margin-left: 340px;
+}
+
+.team-solutions-text {
+    width: 52%;
+    margin-left: 334px
+}
+
+.trello {
+    margin-left: 230px;
+    margin-right: 112px
+}
+
+.trello-image {
+    width: 110%;
+    margin-left: -105px;
+    height: 300px;
+}
+
+.trello-div {
+    width: 75%;
+}
+
+.trello-text {
+    width: 95%;
+}
