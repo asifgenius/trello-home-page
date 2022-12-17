@@ -1,36 +1,123 @@
-.text-middle{
+.text-middle {
     text-align: center;
-    }
-    
-    .middle-position{
-        margin-left: 120px;
-        margin-right: 140px;
-    
-    }
-    
-    .line-border{
-        height: 4px; width: 57%; background-color:blue ; border-radius: 30px;
-    }
-    
-    .card-border{
-        margin-left: 122px;
-    }
-    
-    .end-color{
+}
+
+.middle-position {
+    margin-left: 120px;
+    margin-right: 140px;
+
+}
+
+.line-border {
+    height: 4px;
+    width: 57%;
+    background-color: blue;
+    border-radius: 30px;
+}
+
+.card-border {
+    margin-left: 122px;
+}
+
+.end-color {
     background-color: #f4f5ff;
     height: 311px;
-    
-    }
-    .text{
-        margin-top: -252px;
-    }
-    .top-space{
-        margin-top: 70px;
-    }
-    hr{
-        margin: 1rem 0;
-        color: inherit;
-        border: 0;
-        border-top: 1px solid;
-        opacity: 1;
-    }
+
+}
+
+.text {
+    margin-top: -252px;
+}
+
+.top-space {
+    margin-top: 70px;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 1;
+}
+.trello-views {
+    margin-top: 58px;
+    background-color: #fff5f5;
+    height: 350px;
+}
+
+.trello-views-text-div {
+    margin-left: 130px;
+}
+
+.trello-views-image {
+    width: 100%;
+    height: 1021px;
+    margin-top: -331px
+}
+
+.trello-views-text-image {
+    width: 675px;
+    height: 455px;
+    margin-left: 334px;
+}
+
+.hit-deadline-div {
+    margin-left: 30px;
+    width: 42%;
+    height: 30px;
+}
+
+.hit-deadline-image {
+    margin-left: -211px;
+    height: 267px;
+    width: 315%;
+    margin-top: -2px;
+
+}
+
+.hit-deadline-text-image {
+    margin-left: -259px;
+    width: 434%;
+    height: 312px;
+}
+
+.tasks {
+    margin-left: 438px;
+    width: 50%;
+}
+
+.actionable-image {
+    margin-top: -15px;
+    width: 446px;
+    height: 299px;
+    margin-left: 22px;
+}
+
+.work {
+    margin-top: 30px;
+    width: 50%;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.trello-map-view-image {
+    margin-top: -15px;
+    width: 446px;
+    height: 299px;
+    margin-left: 22px;
+}
+
+.manage-work-image {
+    margin-top: -15px;
+    width: 446px;
+    height: 299px;
+    margin-left: 22px;
+}
+
+.manage-work-div {
+    margin-top: 30px;
+    width: 50%;
+    height: 30px;
+    margin-left: 200px;
+}
