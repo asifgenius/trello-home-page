@@ -28,3 +28,148 @@ p{
 .text-bold{
     font-weight: bold;
 }
+
+/* card */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #ffffff;
+}
+.product-roadmap {
+    background-color: #d5ffff;
+}
+.image-div {
+    margin-right: -251px!important;
+    width: 100%;
+} 
+
+
+.product-roadmap-button {
+   
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.product-roadmap-div {
+    height: 134px;
+    width: 105%;
+    border-radius: 4px;
+}
+
+.product-roadmap-link {
+    margin-left: -193px;
+}
+
+.product-roadmap-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.agile-sprint-button {
+    /* margin-left: 111px;
+    width: 378px; */
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.agile-sprint-link {
+    margin-left: -228px;
+}
+
+.agile-sprint-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.feature-requests-button {
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.feature-requests-link {
+    margin-left: -185px;
+}
+
+.feature-requests-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.product-roadmap-image {
+    width: 573%;
+    margin-left: -607px;
+    height: 490px;
+    margin-top: 30px;
+    background-color: aqua;
+}
+
+.agile-sprint-image {
+    width: 573%;
+    margin-left: -607px;
+    height: 490px;
+    margin-top: 30px;
+}
+
+.feature-requests-image {
+ width: 310%;
+    margin-left: -607px;
+    height: 580px;
+    margin-top: 30px;
+    background-color: aqua;
+
+}
+.card-div {
+    margin-top: -450px;
+    margin-bottom: -10px;
+}
+.card {
+    width: 100%;
+    height: 30px;
+}
+/*  */
+.trello-free{
+    background-color: rgb(64, 50, 148);
+    background-color: rgb(76, 154, 255);
+    height: 362px;
+}
+.trello-free-div{
+    width: 48%;
+    
+    padding-top: 30px;
+}
+.trello-free-image{
+    width: 40px; height: 40px;
+    margin-left: 11px;
+}
+.trello-free-image-div{
+    margin-top: 24px;
+    margin-left: 30px;
+    width: 93%;
+}
+.advanced-div{
+    padding-top: 15px;
+}
+.storage{
+    padding-top: 44px;
+}
