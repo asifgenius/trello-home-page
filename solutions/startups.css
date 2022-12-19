@@ -5,12 +5,6 @@
     width: 433px;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    color: var(--bs-nav-pills-link-active-color);
-    background-color: aqua;
-}
-
 .p-text-header {
     font-size: 25px;
     color: white;
@@ -68,7 +62,7 @@
 
 .team-solutions {
     background-color: #1e2db7;
-    height: 360px;
+    height: 334px;
 }
 
 .team-solutions-div {
@@ -76,12 +70,12 @@
 }
 
 .team-solutions-image {
-    height: 360px;
+    height: 334px;
 }
 
 .team-solutions-text-div {
     text-align: center;
-    margin-top: -340px;
+    margin-top: -284px;
     color: white;
 }
 
@@ -149,71 +143,95 @@
     font-size: 20px;
     margin-top: 130px;
 }
-
+/* card-button */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #ffffff;
+}
 .product-roadmap {
     background-color: #d5ffff;
 }
+.image-div {
+    margin-right: -251px!important;
+    width: 109%;
+} 
+
 
 .product-roadmap-button {
-    margin-left: 30px;
+   
     margin-top: 30px;
     width: 27%;
     border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
 }
 
 .product-roadmap-div {
     height: 134px;
-    width: 109%;
+    width: 105%;
     border-radius: 4px;
 }
 
 .product-roadmap-link {
-    margin-left: -170px;
+    margin-left: -193px;
 }
 
 .product-roadmap-text {
     color: rgb(9, 30, 66);
     height: 129px;
-    margin-left: -34px;
-    width: 110%;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
 }
 
 .agile-sprint-button {
-    margin-left: 30px;
+    /* margin-left: 111px;
+    width: 378px; */
     margin-top: 30px;
     width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
 }
 
 .agile-sprint-link {
-    margin-left: -197px;
+    margin-left: -228px;
 }
 
 .agile-sprint-text {
     color: rgb(9, 30, 66);
     height: 129px;
-    margin-left: -12px;
-    width: 110%;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
 }
 
 .feature-requests-button {
-    margin-left: 30px;
     margin-top: 30px;
     width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
 }
 
 .feature-requests-link {
-    margin-left: -150px;
+    margin-left: -185px;
 }
 
 .feature-requests-text {
     color: rgb(9, 30, 66);
     height: 129px;
-    margin-left: -7px;
-    width: 100%;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
 }
 
 .product-roadmap-image {
-    width: 505%;
+    width: 573%;
     margin-left: -607px;
     height: 490px;
     margin-top: 30px;
@@ -221,18 +239,19 @@
 }
 
 .agile-sprint-image {
-    width: 505%;
+    width: 573%;
     margin-left: -607px;
     height: 490px;
     margin-top: 30px;
 }
 
 .feature-requests-image {
-    width: 505%;
+ width: 310%;
     margin-left: -607px;
-    height: 490px;
+    height: 580px;
     margin-top: 30px;
     background-color: aqua;
+
 }
 
 .product-launches {
@@ -319,13 +338,9 @@
     margin-top: 70px;
 }
 
-
-/*SwagUp card */
-
-
 .card-div {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: -450px;
+    margin-bottom: -10px;
 }
 
 .tab-div {
@@ -687,7 +702,7 @@
 /* text-well */
 .text-well {
     margin-top: 8px;
-    background-color: rgb(101, 84, 192);
+    background-color: #6e1ef9;
     height: 109px;
 }
 

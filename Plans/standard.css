@@ -1,0 +1,23 @@
+h1{
+    color: rgb(9, 30, 66);
+    font-size: 3rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 20px;
+}
+.trello-standard-div{
+     width: 38%;
+     padding-top: 8rem;
+}
+.trello-standard{
+    margin-left: 130px; margin-right: 130px; 
+}
+.trello-image{
+    width: 598px;
+    margin-left: 35px;
+    padding-top: 8rem;
+}
+.trello-standard-button{
+    height: 50px;
+}
