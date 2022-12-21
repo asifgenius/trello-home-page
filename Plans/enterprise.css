@@ -1,24 +1,36 @@
-h1{
+h1 {
     font-size: 3rem;
     line-height: 1.25;
     color: rgb(9, 30, 66);
+    font-family: var(--font-family-display, "Charlie Display", sans-serif);
 }
 
-p{
+h2 {
+
+    color: rgb(9, 30, 66);
+    font-size: 2.25rem;
+    line-height: 1.33333;
+    font-family: var(--font-family-display, "Charlie Display", sans-serif);
+}
+
+p {
     font-size: 20px;
     margin-bottom: 1rem;
     color: rgb(9, 30, 66);
+    font-family: var(--font-family-text, "Charlie Text", sans-serif);
 }
 
-.text-color{
-color: white;
+.text-color {
+    color: white;
 }
-.trello-enterprise-text-div{
+
+.trello-enterprise-text-div {
     width: 70%;
     margin-top: 55px;
 }
+
 .trello-enterprise {
-    margin-left:122px;
+    margin-left: 122px;
     margin-right: 130px;
 }
 
@@ -28,6 +40,7 @@ color: white;
     background-color: white;
     border-radius: 4px;
 }
+
 .contact-sales {
     --bs-btn-padding-x: 0.75rem;
     --bs-btn-padding-y: 0.375rem;
@@ -41,7 +54,7 @@ color: white;
     --bs-btn-border-color: transparent;
     --bs-btn-border-radius: 0.375rem;
     --bs-btn-hover-border-color: transparent;
-    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     --bs-btn-disabled-opacity: 0.65;
     --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
     display: inline-block;
@@ -60,16 +73,36 @@ color: white;
     user-select: none;
     border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
     border-radius: var(--bs-btn-border-radius);
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-.trello-enterprise-div{
-    height: 1000px;
+
+.trello-enterprise-div {
+    height: 458px;
 }
-.trello-enterprise-color{
+
+.trello-enterprise-color {
     background: linear-gradient(rgb(64, 50, 148), rgb(178, 40, 101)) no-repeat;
 }
-.trello-enterprise-image{
+
+.trello-enterprise-image {
     max-width: 100%;
     height: auto;
     margin-top: 55px;
+}
+
+.trello-powers {
+    width: 58%;
+
+    text-align: center;
+    margin-left: 334px;
+}
+
+.trello-powers-image {
+    width: 82%;
+    margin-left: 125px;
+}
+
+.trello-marketing-image {
+    width: 67%;
+    margin-left: -135px;
 }
