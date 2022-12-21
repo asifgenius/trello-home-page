@@ -18,7 +18,9 @@ p {
     margin-left: 130px;
     margin-right: 130px;
 }
-
+.trello-standard-text{
+font-weight: bold;
+}
 .trello-image {
     width: 598px;
     margin-left: 35px;
