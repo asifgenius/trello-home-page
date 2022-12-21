@@ -106,3 +106,38 @@ p {
     width: 67%;
     margin-left: -135px;
 }
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.33333;
+    font-family: var(--font-family-display, "Charlie Display", sans-serif);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-family: var(--font-family-display, "Charlie Display", sans-serif);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.teams-div {
+    width: 48%;
+    margin-top: 62px;
+}
+
+.admins-div {
+    width: 48%;
+    margin-top: 62px;
+    margin-left: 50px;
+}
+
+.request-button {
+    text-align: center;
+    margin-left: 495px;
+    margin-top: 30px;
+    height: 50px;
+    width: 15%;
+}
