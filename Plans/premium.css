@@ -1,0 +1,387 @@
+h1 {
+    color: rgb(9, 30, 66);
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(9, 30, 66);
+}
+
+.trello-standard-div {
+    width: 38%;
+    padding-top: 3rem;
+    margin-left: 130px;
+}
+.trello-standard-color{
+    background: linear-gradient(rgb(230, 252, 255), rgb(255, 255, 255)) no-repeat;
+}
+.trello-standard {
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 57px;
+}
+.trello-standard-header{
+    margin-top: 65px;
+}
+.trello-standard-text {
+    font-weight: bold;
+}
+
+.trello-image {
+    width: 637px;
+    margin-left: 35px;
+    padding-top: 2rem;
+}
+
+.trello-standard-button {
+    height: 50px;
+    margin-right: 13px;
+}
+
+.teams {
+    width: 30%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* card */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #ffffff;
+}
+
+.product-roadmap {
+    background-color: #d5ffff;
+}
+
+.image-div {
+    margin-right: -251px !important;
+    width: 100%;
+}
+
+
+.product-roadmap-button {
+
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.product-roadmap-div {
+    height: 134px;
+    width: 105%;
+    border-radius: 4px;
+}
+
+.product-roadmap-link {
+    margin-left: -193px;
+}
+
+.product-roadmap-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.agile-sprint-button {
+    /* margin-left: 111px;
+    width: 378px; */
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.agile-sprint-link {
+    margin-left: -228px;
+}
+
+.agile-sprint-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.feature-requests-button {
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.feature-requests-link {
+    margin-left: -185px;
+}
+
+.feature-requests-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.product-roadmap-image {
+    width: 573%;
+    margin-left: -607px;
+    height: 490px;
+    margin-top: 30px;
+    background-color: aqua;
+}
+
+.agile-sprint-image {
+    width: 573%;
+    margin-left: -607px;
+    height: 490px;
+    margin-top: 30px;
+}
+
+.feature-requests-image {
+    width: 310%;
+    margin-left: -607px;
+    height: 580px;
+    margin-top: 30px;
+    background-color: aqua;
+
+}
+
+.card-div {
+    margin-top: -450px;
+    margin-bottom: -10px;
+}
+
+.card {
+    width: 100%;
+    height: 30px;
+}
+
+/*  */
+.trello-free {
+    height: 427px;
+    background: linear-gradient(rgb(64, 50, 148), rgb(76, 154, 255));
+}
+.trello-free-text-div{
+    width: 30%;
+    color: white;
+}
+.trello-free-text{
+    color: white;
+}
+.trello-free-div {
+    width: 48%;
+
+    padding-top: 30px;
+}
+
+.trello-free-image {
+    width: 40px;
+    height: 40px;
+    margin-left: 11px;
+    margin-right: 17px;
+}
+
+.trello-free-image-div {
+    margin-top: 24px;
+    margin-left: 30px;
+    width: 93%;
+}
+
+.advanced-div {
+    padding-top: 15px;
+    margin-top: 42px;
+}
+
+.storage {
+    padding-top: 44px;
+}
+
+.join-teams {
+    text-align: center;
+    background-color: white;
+}
+
+.join-teams-text {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.join-teams-image {
+    height: 80px;
+}
+
+/* tried-trello */
+.tried-trello {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tried-trello-div {
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgb(64, 50, 148), rgb(23, 43, 77));
+    margin-top: -4px;
+    padding: 5rem 1rem 1rem;
+}
+
+.tried-trello-text {
+    width: 38%;
+    color: white;
+    margin-left: 425px;
+}
+
+.tried-trello-email {
+    display: block;
+    width: 27%;
+    height: 51px;
+    margin-left: 432px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.sign-up-button {
+    margin-left: 20px;
+    width: 7%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#sign-up-button-border {
+    border-radius: 4px;
+}
+
+.sign-up-btn {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #212529;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    border-radius: 4px;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.text-color {
+    color: rgb(23, 43, 77);
+}
+
+/* preview */
+.preview {
+    margin-left: -130px;
+}
+
+.preview-div {
+    margin-top: 65px;
+}
+
+.preview-image {
+    width: 71%;
+}
+
+.preview-button {
+    align-items: center;
+    color: rgb(23, 43, 77);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.7rem 1rem 0.8rem;
+    border-color: rgb(0, 184, 217);
+    font-size: 1rem;
+}
+
+.preview-button:hover {
+    align-items: center;
+    color: rgb(23, 43, 77);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.7rem 1rem 0.8rem;
+    border: 1px solid rgb(0, 184, 217);
+    font-size: 1rem;
+}
+
+.webinar-button {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #212529;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: 0.375rem;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    border-color: rgb(0, 184, 217);
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
