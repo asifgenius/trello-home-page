@@ -267,3 +267,17 @@ h4 {
 .curated-div {
     width: 63%;
 }
+
+.pricing {
+    margin-left: 275px;
+    width: 48%;
+}
+
+.total-div {
+    margin-left: 130px;
+}
+
+.total-text {
+    font-size: 1rem;
+    color: gray;
+}
