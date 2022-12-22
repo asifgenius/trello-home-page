@@ -1,0 +1,132 @@
+.text-middle {
+    text-align: center;
+}
+
+.middle-position {
+    margin-left: 120px;
+    margin-right: 120px;
+
+}
+
+.line-border {
+    height: 4px;
+    width: 57%;
+    background-color: #212a78;
+    border-radius: 30px;
+}
+
+hr {
+
+    opacity: 1.25;
+}
+
+.card-border {
+    margin-left: 111px;
+}
+
+.end-color {
+    background-color: #030340;
+    height: 500px;
+    border-radius: 30px;
+
+}
+
+.text {
+    margin-top: -252px;
+}
+
+.top-space {
+    margin-top: 70px;
+}
+
+.button-color {
+    color: #100f56;
+    background-color: white;
+
+}
+
+.button-color:hover {
+    color: #100f56;
+    background-color: #eaeefd;
+    cursor: pointer;
+}
+
+.image-end {
+    margin-top: 63px;
+}
+
+.text-white-color {
+    color: white;
+    font-size: 21px;
+}
+
+.text-size {
+    color: #100f56;
+    font-size: 21px;
+}
+
+a:hover {
+    color: white;
+}
+
+.p-text {
+    color: #adb5bd;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 1;
+}
+
+.automate-div {
+    background-color: #585db3;
+    height: 530px;
+}
+
+.trello-text-div {
+    width: 50%;
+    margin-left: 335px;
+}
+
+.trello-text-header {
+    font-size: 35px;
+}
+
+.trello-text-image {
+    margin-left: 143px;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.card-add {
+    margin: 0px;
+    width: 433px;
+    height: 363px;
+}
+
+.move-work {
+    margin-left: 30px;
+    width: 42%;
+    height: 30px;
+}
+
+.integrate-div {
+    margin-left: 110px;
+    width: 50%;
+}
+
+.companies-image {
+    height: 30px;
+}
+
+.companies-text-image {
+    margin-left: 37px;
+    height: 30px;
+}
+
+.companies-text-div {
+    margin-top: 30px;
+}
