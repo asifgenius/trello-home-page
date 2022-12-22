@@ -287,10 +287,6 @@ h4 {
     margin-top: -19px;
     margin-bottom: 15px;
 }
-
-
-.card-contact {}
-
 .contact-body {
     flex: 1 1 auto;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);

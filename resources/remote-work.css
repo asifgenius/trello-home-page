@@ -26,6 +26,8 @@ a {
 	top: 0;
 	width: 11%;
 	cursor: default;
+	right: 0px;
+	left: 0;
 }
 
 .embrace-remote {
@@ -62,7 +64,9 @@ a {
 .trello-nav-div {
 	width: 66%;
 }
-
+.text-color{
+	color: rgb(0, 163, 191);
+}
 .trello-nav-header {
 	font-size: 21px;
 	font-weight: bold;
@@ -87,24 +91,7 @@ a {
 	border-radius: 0.375rem;
 }
 
-.trello-nav:hover {
-	display: block;
-	width: 143%;
-	padding: 0.375rem 0.75rem;
-	font-size: 1rem;
-	height: 627px;
-	margin-top: -24px;
-	position: sticky;
-	top: 0;
-	font-weight: 400;
-	line-height: 1.5;
-	color: rgb(180, 12, 172);
-	background-color: #fff;
-	background-clip: padding-box;
-	border: white;
-	box-shadow: 0rem 0rem 1rem gray;
-	border-radius: 0.375rem;
-}
+
 
 .productive-div {
 	margin-left: 225px;
@@ -347,4 +334,5 @@ a {
 
 .hybrid-work-text {
 	font-size: 21px;
+	color: white;
 }
