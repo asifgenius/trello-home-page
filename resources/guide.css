@@ -368,3 +368,25 @@ p {
 .free-text {
 	width: 78%;
 }
+.join-teams {
+	text-align: center;
+	background-color: white;
+}
+
+.join-teams-text {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: -75px;
+}
+
+.join-teams-image {
+	height: 80px;
+
+}
+.teams-image{
+	margin-left: -103px;
+}
+.image-team{
+	margin-left: -132px;
+}
