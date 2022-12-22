@@ -1,3 +1,22 @@
+h1{
+    font-size: 3rem;
+    line-height: 1.25;
+    color: rgb(9, 30, 66);
+}
+p{
+    color: rgb(9, 30, 66);
+    font-weight: 400;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+}
+.trello-business-text{
+    font-size: 21px;
+    width: 54%;
+    margin-left: 271px;
+}
+.text-color {
+    color: rgb(9, 30, 66);
+}
 .trello-business {
     margin-left: 125px;
     margin-right: 60px;
@@ -11,9 +30,11 @@
 .free-div {
     height: 475px;
 }
-
+.free-text{
+    padding-top: 30px;
+}
 .free-button {
-    margin-top: 165px;
+    margin-top: 112px;
 }
 
 .standard-div {
@@ -21,9 +42,14 @@
 }
 
 .standard-button {
-    margin-top: 140px;
+    margin-top: 88px;
 }
-
+.standard-text{
+    padding-top: 5px;
+}
+.premium-position{
+    margin-top: 28px;
+}
 .premium-div {
     height: 475px;
     --bs-card-spacer-y: 1rem;
@@ -57,7 +83,7 @@
 }
 
 .premium-button {
-    margin-top: 92px;
+    margin-top: 65px;
 }
 
 .enterprise-div {
