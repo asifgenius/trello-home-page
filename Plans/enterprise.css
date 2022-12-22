@@ -282,18 +282,15 @@ h4 {
     color: gray;
 }
 
-
-
-
-#contact-header{
+#contact-header {
     font-size: 21px;
     margin-top: -19px;
     margin-bottom: 15px;
 }
 
 
-.card-contact{
-}
+.card-contact {}
+
 .contact-body {
     flex: 1 1 auto;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
@@ -304,24 +301,24 @@ h4 {
     background-color: rgb(167, 167, 253);
 }
 
-.contact-div{
+.contact-div {
     margin-left: 30px;
     width: 86%;
     padding-top: 37px;
     border-radius: 7px;
 }
 
-.contact{
+.contact {
     margin-top: -16px;
     margin-bottom: 15px;
     border-radius: 7px;
 }
 
-.contact-button{
+.contact-button {
     margin-bottom: 30px;
 }
 
-.card-enterprise{
+.card-enterprise {
     border: 1px solid rgb(106 90 31 / 50%);
     background-color: rgba(255, 236, 167, 0.705);
     border-radius: 7px;
@@ -352,6 +349,7 @@ h4 {
     background-clip: border-box;
 
 }
+
 .enterprise-body {
     flex: 1 1 auto;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
@@ -359,12 +357,9 @@ h4 {
     border-radius: 7px;
 }
 
-.enterprise-text{
+.enterprise-text {
     font-size: 1rem;
 }
-
-
-
 
 .premium-button {
     width: 37%;
@@ -408,11 +403,9 @@ h4 {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-
-
-
-.card-customer-support{
-    margin-top: 30px;border: 1px solid rgb(106 90 31 / 50%);
+.card-customer-support {
+    margin-top: 30px;
+    border: 1px solid rgb(106 90 31 / 50%);
     background-color: rgb(235 225 190 / 71%);
     border-radius: 7px;
     width: 100%;
@@ -442,13 +435,15 @@ h4 {
     word-wrap: break-word;
     background-clip: border-box;
 }
-.customer-support-body{
+
+.customer-support-body {
     flex: 1 1 auto;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     border: 1px solid rgba(153, 141, 217, 0.5);
     border-radius: 7px;
 }
-.contact-text{
+
+.contact-text {
     font-size: 1rem;
     color: rgb(9, 30, 66);
 }
