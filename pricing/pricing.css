@@ -36,7 +36,13 @@ p{
 .free-button {
     margin-top: 112px;
 }
-
+.trello-free-text{
+    font-family: var(--font-family-text,"Charlie Text",sans-serif);
+    margin-left: 8px;
+    font-size: 1rem;
+    color: rgb(9, 30, 66);
+    width: 95%;
+}
 .standard-div {
     height: 475px;
 }
@@ -46,6 +52,9 @@ p{
 }
 .standard-text{
     padding-top: 5px;
+}
+.standard-link{
+    margin-top: 245px;
 }
 .premium-position{
     margin-top: 28px;
@@ -89,7 +98,9 @@ p{
 .enterprise-div {
     height: 475px;
 }
-
+.premium-link{
+    margin-top: 134px;
+}
 .enterprise-link {
     appearance: none;
 }
