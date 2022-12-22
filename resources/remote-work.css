@@ -1,0 +1,170 @@
+.trello {
+	margin-left: 210px;
+	width: 78%;
+	margin-right: 114px;
+}
+
+h3 {
+	font-family: var(--font-family-display, "Charlie Display", sans-serif);
+	line-height: 1.33333;
+	color: rgb(9, 30, 66);
+}
+
+.remote-work-navbar {
+	background: linear-gradient(90deg, rgb(179, 245, 255) 0%, rgb(0, 184, 217) 99%);
+	height: 0.25rem;
+	transition: width 0.2s ease 0s;
+	position: sticky;
+	top: 0;
+	width: 11%;
+	cursor: default;
+}
+
+.embrace-remote {
+	background: linear-gradient(60deg, rgb(101, 84, 192), rgb(249, 156, 219)) no-repeat;
+	height: 450px;
+}
+
+.embrace-remote-image {
+	width: 74%;
+	margin-top: 50px;
+	margin-left: -61px;
+}
+
+.embrace-remote-header {
+	margin-top: 129px;
+	font-size: 43px;
+	color: white;
+}
+
+.embrace-remote-text {
+	font-size: 21px;
+	color: white;
+	width: 93%;
+}
+
+.trello-nav-text {
+	margin-left: 94px;
+	margin-top: 34px;
+	cursor: pointer;
+	color: rgb(9, 30, 66);
+	font-size: 16px;
+}
+
+.trello-nav-div {
+	width: 66%;
+}
+
+.trello-nav-header {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 20px;
+}
+
+.trello-nav {
+	display: block;
+	width: 90%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	height: 627px;
+	margin-top: 24px;
+	position: sticky;
+	top: 0;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: white;
+	box-shadow: 0rem 0rem 1rem gray;
+	border-radius: 0.375rem;
+}
+
+.trello-nav:hover {
+	display: block;
+	width: 143%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	height: 627px;
+	margin-top: -24px;
+	position: sticky;
+	top: 0;
+	font-weight: 400;
+	line-height: 1.5;
+	color: rgb(180, 12, 172);
+	background-color: #fff;
+	background-clip: padding-box;
+	border: white;
+	box-shadow: 0rem 0rem 1rem gray;
+	border-radius: 0.375rem;
+}
+
+.productive-div {
+	margin-left: 92px;
+	margin-right: 118px;
+}
+
+.productive-text {
+	margin-top: 115px;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 68px;
+}
+
+.work-div {
+	margin-top: 50px;
+}
+
+.work-header {
+	color: rgb(0, 163, 191);
+}
+
+
+.work-card {
+	color: rgba(255, 255, 255, 1);
+	height: 60px;
+	width: 417px;
+	margin-left: 297px;
+	background-color: rgb(101, 84, 192);
+	padding: 1rem 1.7rem;
+	text-align: right;
+	border-radius: 10px;
+}
+
+.remote-card {
+	color: rgba(255, 255, 255, 1);
+	height: 111px;
+	width: 480px;
+	background-color: rgb(178, 40, 101);
+	padding: 1rem 1.7rem;
+	text-align: right;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+.tried-card {
+	color: rgba(255, 255, 255, 1);
+	height: 83px;
+	width: 488px;
+	margin-left: 233px;
+	background-color: rgb(101, 84, 192);
+	padding: 1rem 1.7rem;
+	text-align: right;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+.slacking-card {
+	color: rgba(255, 255, 255, 1);
+	height: 62px;
+	width: 480px;
+	background-color: rgb(178, 40, 101);
+	padding: 1rem 1.7rem;
+	text-align: right;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-bottom: 39px;
+}
