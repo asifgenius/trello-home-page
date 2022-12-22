@@ -341,7 +341,6 @@ h4 {
     --bs-card-cap-color: ;
     --bs-card-height: ;
     --bs-card-color: ;
-    --bs-card-bg: #fff;
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
     position: relative;
@@ -350,7 +349,6 @@ h4 {
     min-width: 0;
     height: var(--bs-card-height);
     word-wrap: break-word;
-    background-color: var(--bs-card-bg);
     background-clip: border-box;
 
 }
@@ -415,7 +413,7 @@ h4 {
 
 .card-customer-support{
     margin-top: 30px;border: 1px solid rgb(106 90 31 / 50%);
-    background-color: rgba(255, 227, 128, 0.705);
+    background-color: rgb(235 225 190 / 71%);
     border-radius: 7px;
     width: 100%;
     margin-left: -84px;
@@ -442,7 +440,6 @@ h4 {
     min-width: 0;
     height: var(--bs-card-height);
     word-wrap: break-word;
-    background-color: var(--bs-card-bg);
     background-clip: border-box;
 }
 .customer-support-body{
