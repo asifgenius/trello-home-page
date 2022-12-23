@@ -1,0 +1,54 @@
+.trello{
+    background-color: rgb(9, 30, 66);
+    
+}
+.trello-image{
+    width: 93%;
+    margin-left: 70px;
+    margin-top: 90px;
+}
+.businesses{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+.trello-header{
+    color: white;
+    margin-top: 213px;
+}
+.trello-text{
+    font-size: 21px;
+    color: white;
+}
+.card-div{
+    height: 255px;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+    
+}
+.card-image{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.card-link{
+    padding: 27px 19px;
+    margin-top: 109px;
+    font-size: 25px;
+    color: rgb(9, 30, 66);
+    font-weight: bold;
+ 
+}
+.card-link:hover{
+    font-size: 25px;
+    color: rgb(9, 30, 66);
+    padding: 27px 19px;
+    font-weight: bold;
+    }
+.card-text{
+    font-size: 15px;
+    color: rgb(9, 30, 66);
+    padding: 9px 19px;
+}
+.card-image-div{
+    margin-bottom: 114px;
+}
