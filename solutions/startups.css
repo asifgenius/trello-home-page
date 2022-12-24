@@ -1,0 +1,727 @@
+.p-text {
+    font-size: 25px;
+    color: rgb(9, 30, 66);
+    margin-top: 12px;
+    width: 433px;
+}
+
+.p-text-header {
+    font-size: 25px;
+    color: white;
+    margin-top: 12px;
+    width: 433px;
+}
+
+/* ///////////////////// */
+.card {
+    width: 100%;
+    height: 30px;
+}
+
+.text-button-position {
+
+    margin-top: -3px;
+
+}
+.head-border-card {
+
+    border: 0;
+    border-top: 1px;
+    margin-top: -153px;
+    border-radius: 400px 389px 0px;
+    background-color: blue;
+    height: 26px;
+
+}
+
+.button-card {
+
+    border-color: white;
+    height: 30px;
+    width: 23%;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #e7e7e7;
+    margin-left: 20px;
+    color: gray;
+}
+
+.button-card:hover {
+    color: rgb(0, 183, 255);
+
+}
+
+.list-group-item-action {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #6e1ef9;
+    margin-left: 7px;
+}
+/* //////////////////////////////////////////////// carousel product*/
+
+.team-solutions {
+    background-color: #1e2db7;
+    height: 334px;
+}
+
+.team-solutions-div {
+    justify-content: space-between;
+}
+
+.team-solutions-image {
+    height: 334px;
+}
+
+.team-solutions-text-div {
+    text-align: center;
+    margin-top: -284px;
+    color: white;
+}
+
+.team-solutions-text-link {
+    color: white;
+}
+
+.team-solutions-text-header {
+    width: 50%;
+    margin-left: 340px;
+}
+
+.team-solutions-text {
+    width: 52%;
+    margin-left: 334px
+}
+
+.trello {
+    margin-left: 230px;
+    margin-right: 112px
+}
+
+.trello-image {
+    width: 110%;
+    margin-left: -105px;
+    height: 300px;
+}
+
+.trello-div {
+    width: 75%;
+}
+
+.trello-text {
+    width: 95%;
+}
+
+.join-teams {
+    text-align: center;
+    background-color: whitesmoke
+}
+
+.join-teams-text {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.join-teams-image {
+    height: 80px;
+}
+
+.product-management {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.product-management-text {
+    width: 51%;
+    text-align: center;
+    margin-left: 350px;
+    font-size: 20px;
+}
+
+.product-management-link {
+    font-size: 20px;
+    margin-top: 130px;
+}
+/* card-button */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #ffffff;
+}
+.product-roadmap {
+    background-color: #d5ffff;
+}
+.image-div {
+    margin-right: -251px!important;
+    width: 109%;
+} 
+
+
+.product-roadmap-button {
+   
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.product-roadmap-div {
+    height: 134px;
+    width: 105%;
+    border-radius: 4px;
+}
+
+.product-roadmap-link {
+    margin-left: -193px;
+}
+
+.product-roadmap-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.agile-sprint-button {
+    /* margin-left: 111px;
+    width: 378px; */
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.agile-sprint-link {
+    margin-left: -228px;
+}
+
+.agile-sprint-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.feature-requests-button {
+    margin-top: 30px;
+    width: 27%;
+    border-radius: 4px;
+    margin-left: 112px;
+    height: 180px;
+    background-color: white;
+}
+
+.feature-requests-link {
+    margin-left: -185px;
+}
+
+.feature-requests-text {
+    color: rgb(9, 30, 66);
+    height: 129px;
+    margin-left: 2px;
+    width: 82%;
+    text-align: left;
+}
+
+.product-roadmap-image {
+    width: 573%;
+    margin-left: -607px;
+    height: 490px;
+    margin-top: 30px;
+    background-color: aqua;
+}
+
+.agile-sprint-image {
+    width: 573%;
+    margin-left: -607px;
+    height: 490px;
+    margin-top: 30px;
+}
+
+.feature-requests-image {
+ width: 310%;
+    margin-left: -607px;
+    height: 580px;
+    margin-top: 30px;
+    background-color: aqua;
+
+}
+
+.product-launches {
+    margin-left: 125px;
+    margin-right: 60px
+}
+
+.product-launches-header {
+    width: 68%;
+}
+
+.product-launches-image {
+    width: 110%;
+    margin-left: -105px;
+    height: 330px;
+}
+
+.power-up {
+    margin-left: 230px;
+    margin-right: 18px
+}
+
+.power-up-image {
+    width: 80%;
+    margin-left: -105px;
+    margin-top: 0px;
+}
+
+.power-up-div {
+    margin-left: -140px;
+}
+
+.move-work {
+    margin-left: 125px;
+    margin-right: 60px
+}
+
+.move-work-header {
+    width: 68%;
+}
+
+.move-work-image {
+    width: 110%;
+    margin-left: -105px;
+    height: 330px;
+}
+
+.resources {
+    background-color: #e7e7e7;
+    height: 821px;
+}
+
+.resources-div {
+    margin-left: 125px;
+    margin-right: 60px;
+}
+
+.resources-header {
+    padding: 5rem 1rem 1rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.available {
+    background-color: rgb(4, 4, 70);
+    border-radius: 10px;
+}
+
+.available-div {
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+
+.available-text {
+    color: white;
+    margin-top: 30px;
+    height: 127px;
+}
+
+.available-link {
+    background-color: white;
+    margin-top: 70px;
+}
+
+.card-div {
+    margin-top: -450px;
+    margin-bottom: -10px;
+}
+
+.tab-div {
+    margin-left: 970px;
+    margin-top: 500px
+}
+
+.list-div {
+    margin-top: 13px;
+}
+
+#list-SwagUp-list {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #6e1ef9;
+}
+
+#list-dog-training-list {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #6e1ef9;
+    margin-left: 7px;
+}
+
+#list-desk-plants-list {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #6e1ef9;
+    margin-left: 7px;
+}
+
+#list-Scan2Cad-list {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #6e1ef9;
+    margin-left: 7px;
+}
+
+#palace-law-list {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #6e1ef9;
+    margin-left: 7px;
+}
+
+.SwagUp-div {
+    height: 405px;
+    width: 873px;
+    margin-left: 235px;
+    margin-bottom: 263px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 25px grey;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.SwagUp-image {
+    margin-top: 43px;
+    height: 50px;
+}
+
+.SwagUp-list-div {
+    margin-top: -92px;
+}
+
+.SwagUp-header {
+    margin-top: 177px;
+}
+
+.instinct-div {
+    height: 405px;
+    width: 873px;
+    margin-left: 235px;
+    margin-bottom: 263px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 25px grey;
+    text-align: center;
+}
+
+.instinct-image {
+    margin-top: 35px;
+    height: 116px;
+    width: 205px;
+}
+
+.instinct-header {
+    margin-top: 177px;
+}
+
+
+.desk-plants-div {
+    height: 405px;
+    width: 873px;
+    margin-left: 235px;
+    margin-bottom: 263px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 25px grey;
+    text-align: center;
+}
+
+
+.desk-plants-header {
+    margin-top: 177px;
+}
+
+.desk-plants-image {
+    margin-top: 35px;
+    height: 116px;
+    width: 205px;
+}
+
+.Scan2Cad-div {
+    height: 405px;
+    width: 873px;
+    margin-left: 235px;
+    margin-bottom: 263px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 25px grey;
+    text-align: center;
+}
+
+.Scan2Cad-image {
+    margin-top: 35px;
+    height: 116px;
+    width: 205px;
+}
+
+.Scan2Cad-header {
+    margin-top: 177px;
+}
+
+.palace-law-div {
+    height: 405px;
+    width: 873px;
+    margin-left: 235px;
+    margin-bottom: 263px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 25px grey;
+    text-align: center;
+}
+
+.palace-law-image {
+    margin-top: 35px;
+    height: 116px;
+    width: 205px;
+}
+
+.palace-law-header {
+    margin-top: 177px;
+}
+
+
+.trello-business {
+    margin-left: 125px;
+    margin-right: 60px;
+    margin-top: -213px;
+}
+
+.trello-text-div {
+    text-align: center;
+}
+
+.free-div {
+    height: 475px;
+}
+
+.free-button {
+    margin-top: 165px;
+}
+
+.standard-div {
+    height: 475px;
+}
+
+.standard-button {
+    margin-top: 140px;
+}
+
+.premium-div {
+    height: 475px;
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 3px;
+    --bs-card-border-color: rgb(5 10 255 / 41%);
+    --bs-card-border-radius: 0.375rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 26%;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+.premium-button {
+    margin-top: 92px;
+}
+
+.enterprise-div {
+    height: 475px;
+}
+
+.enterprise-link {
+    appearance: none;
+}
+
+.enterprise-button {
+    margin-top: 3px;
+}
+
+
+/* trello-business */
+
+.trello-business {
+    margin-left: 125px;
+    margin-right: 60px;
+    margin-top: -213px;
+}
+
+.trello-business-div {
+    text-align: center;
+}
+
+.free-div {
+    height: 475px;
+}
+
+.card {
+    width: 100%;
+    height: 30px;
+}
+
+.position-value {
+    margin-bottom: 20px;
+    margin-top: -32px;
+    font-size: 54px;
+}
+
+.free-button {
+    margin-top: 165px;
+}
+
+.btn-outline-tour {
+    --bs-btn-color: #080808;
+    --bs-btn-border-color: #5734f3;
+
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #f9edc9;
+    --bs-btn-hover-border-color: #ffc10700;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #ffc107;
+    --bs-btn-active-border-color: #ffc107;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ffc107;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ffc107;
+    --bs-gradient: none;
+    width: 48%;
+    height: 42px;
+    border-radius: 3px;
+    border-color: #000;
+    border-collapse: var(--bs-btn-active-color);
+}
+
+.standard-div {
+    height: 475px;
+}
+
+.standard-button {
+    margin-top: 140px;
+}
+
+.premium {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 3px;
+    --bs-card-border-color: rgb(5 10 255 / 41%);
+    --bs-card-border-radius: 0.375rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 26%;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+.premium-button {
+    margin-top: 92px;
+}
+
+.enterprise {
+    height: 475px;
+}
+
+
+#usersCost {
+
+    border-color: #000;
+    margin-left: 15px;
+    margin-right: 10px;
+    border-bottom: #000;
+    border-width: 300%;
+}
+
+#cost-button {
+    color: white;
+    background-color: white;
+    height: 13px;
+    width: 99%;
+}
+
+.enterprise-link {
+    appearance: none;
+}
+
+.enterprise-button {
+    margin-top: 3px;
+}
+
+/* text-well */
+.text-well {
+    margin-top: 8px;
+    background-color: #6e1ef9;
+    height: 109px;
+}
+
+.text-well-div {
+    margin-left: 125px;
+    margin-right: 60px;
+}
+
+.text-well-button-div {
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+
+.text-well-text-div {
+    color: white;
+}
+
+.text-well-signUp-button {
+    background-color: white;
+    margin-top: 35px;
+}
