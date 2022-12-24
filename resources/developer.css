@@ -28,3 +28,10 @@ font-weight: bold;
     font-size: 14px;
     margin-left: 50px;
 }
+.trello-power-up{
+text-decoration: none;
+}
+.trello-power-up:hover{
+    text-decoration: underline;
+    color: #0065FF;
+    }
