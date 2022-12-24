@@ -34,7 +34,9 @@ p {
     margin-right: 130px;
     margin-top: 108px;
 }
-
+.total-header{
+    margin-top: -5px;
+}
 .contact-sales-button {
     width: 37%;
     height: 52px;
@@ -136,8 +138,7 @@ h4 {
 }
 
 .request-button {
-    text-align: center;
-    margin-left: 495px;
+ 
     margin-top: 30px;
     height: 50px;
     width: 15%;

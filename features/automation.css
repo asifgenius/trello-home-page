@@ -5,7 +5,6 @@
 .middle-position {
     margin-left: 120px;
     margin-right: 120px;
-
 }
 
 .line-border {
@@ -16,7 +15,6 @@
 }
 
 hr {
-
     opacity: 1.25;
 }
 
@@ -28,7 +26,6 @@ hr {
     background-color: #030340;
     height: 500px;
     border-radius: 30px;
-
 }
 
 .text {
@@ -42,7 +39,6 @@ hr {
 .button-color {
     color: #100f56;
     background-color: white;
-
 }
 
 .button-color:hover {
