@@ -49,25 +49,29 @@
     margin-top: 29px;
     margin-left: -67px;
 }
-.get-page-div{
+
+.get-page-div {
     width: 69%;
     margin-top: 55px;
     margin-left: 30px;
     position: sticky;
     top: 55px;
 }
-.get-page-text{
+
+.get-page-text {
     font-weight: bold;
     color: #172B4D;
     font-size: 14px;
 }
-.get-page-link{
+
+.get-page-link {
     color: rgb(0, 82, 204);
     font-weight: bold;
     font-size: 13px;
-text-decoration: none;
+    text-decoration: none;
 }
-.trello-page-text{
+
+.trello-page-text {
     font-size: 14px;
     margin-top: 29px;
     margin-left: 900px;
@@ -101,10 +105,12 @@ footer {
 }
 
 .terms-image-div {
-    padding-top: 55px;margin-left: 114px;
+    padding-top: 55px;
+    margin-left: 114px;
 
 }
-.terms-text{
+
+.terms-text {
     font-size: 13px;
     margin-left: 30px;
 }
